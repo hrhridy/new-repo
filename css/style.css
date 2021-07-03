@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
+}
+
+/* ----------------------- Start navbar Css ----------- */
+
+/* ----Sidebar css------ */
+.sidebar {
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+    box-shadow: 5px 7px 25px #999;
+}
+
+.bottom-border {
+    border-bottom: 1px groove rgba(209, 208, 208, 0.466);
+}
+
+.sidebar-link {
+    transition: all ease .4s;
+}
+
+.sidebar-link:hover {
+    border-radius: 5px;
+}
+
+.current {
+    background-color: #FF5332;
+    border-radius: 7px;
+    box-shadow: 2px 5px 10px #111;
+    transition: all ease .4s;
+}
+
+.current:hover {
+    background-color: #FF6F33;
+    border-radius: 7px;
+    box-shadow: 2px 5px 10px #111;
+    transform: translateY(-2px);
+}
+
+/* -----top header css----- */
+.input-search {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    transition: all .4s;
+}
+
+.input-search:focus {
+    background: transparent;
+    border-bottom: 1px solid #FF5332;
+}
+
+.search-btn {
+    transition: all ease .4s;
+}
+
+.search-btn:hover {
+    background: #eee;
+    transform: translateY(-1px);
+}
+
+.icon-child {
+    position: relative;
+}
+
+.icon-child::after {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #FF5332;
+    border-radius: 50%;
+    right: 5px;
+}
+
+@media(max-width:767px) {
+    .sidebar {
+        position: static;
+        height: auto;
+    }
+
+    .top-navbar {
+        position: static;
+    }
+
+    .icon-child::after {
+        left: 15px;
+    }
+
+}
+
+/* ----------------------- End of navbar Css ----------- */
+
+
+/* ------------------------ Card area css ---------------- */
+.card-common {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: all ease .4s;
+}
+
+.card-common:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+/* -------------------- End of card area css -------------- */
+
+
+/* -------------------- Task area start ----------------- */
+.task-border {
+    border-left: 4px solid blueviolet;
+}
+
+/* -------------------- Task area end ----------------- */
